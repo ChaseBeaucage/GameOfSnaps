@@ -17,6 +17,7 @@ private:
     // and there will be getters and setters for this string
     string codeWord;
     int numberOfWords;
+    int wordIndex = 0;
 public:
     Snaps() {
         openingLine();
@@ -54,10 +55,30 @@ public:
     int processWord(string word, int index, int numChars){
         if (index == word.size()-1){
             cout<<"(...It would be way to easy if I gave you the last letter dont you think?)"<<endl;
+            return index;
+        }
+        char toIdentify = tolower(word[index]);
+        if (toIdentify == 'a'){
+            cout<<"*SNAP!*"<<endl;
+            return index++;
+        }
+        if (toIdentify == 'e'){
+            cout<<"*SNAP!* *SNAP!*"<<endl;
+            return index++;
+        }
+        if (toIdentify == 'i'){
+            cout<<"*SNAP!* *SNAP!* *SNAP!*"<<endl;
+            return index++;
+        }
+        if (toIdentify == 'o'){
+            cout<<"*SNAP!* *SNAP!* *SNAP!* *SNAP!*"<<endl;
+            return index++;
+        }
+        if (toIdentify == 'u'){
+            cout<<"*SNAP!* *SNAP!* *SNAP!* *SNAP!* *SNAP!*"<<endl;
+            return index++;
         }
 
-
-        return index;
     }
 
     string sourceCodeWord(){
