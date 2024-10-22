@@ -2,8 +2,8 @@
 // Created by beauc on 10/26/2022.
 //
 
-#ifndef M3OEP_JBEAUCAG_SNAPS_H
-#define M3OEP_JBEAUCAG_SNAPS_H
+#ifndef GAMEOFSNAPS_H
+#define GAMEOFSNAPS_H
 
 #include <iostream>
 #include <fstream>
@@ -118,4 +118,4 @@ public:
 
 
 };
-#endif //M3OEP_JBEAUCAG_SNAPS_H
+#endif //GAMEOFSNAPS_H
